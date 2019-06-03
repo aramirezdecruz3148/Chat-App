@@ -7,7 +7,7 @@ const ui = new firebaseui.auth.AuthUI(auth);
 class AuthApp extends Component {
     render() {
         const dom = this.renderDOM();
-        const header = new Header({ title: 'Sign in to CHAT!' });
+        const header = new Header({ title: 'Get Ready to CHAT!' });
         const main = dom.querySelector('main');
         dom.insertBefore(header.render(), main);
 

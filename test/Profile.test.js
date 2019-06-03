@@ -35,7 +35,7 @@ test('renders with default avatar when no photoURL', assert => {
     const profile = new Profile({ user });
     const expected = /*html*/`
         <div class="profile">
-            <img src="./assets/default-avatar.png">
+            <img src="./assets/avatar-default.png">
             <span>Marty Nelson</span>
             <button>Sign Out</button>
         </div>

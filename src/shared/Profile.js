@@ -4,7 +4,7 @@ import { auth } from '../services/firebase.js';
 class Profile extends Component {
     render() {
         const dom = this.renderDOM();
-        
+
         if(this.props.user) {
             const button = dom.querySelector('button');
             button.addEventListener('click', () => {
@@ -21,7 +21,7 @@ class Profile extends Component {
             return `<div></div>`;
         }
 
-        const avatar = user.photoURL || './assets/default-avatar.png';
+        const avatar = user.photoURL || './assets/avatar-default.png';
 
         return /*html*/`
         <div class="profile">
