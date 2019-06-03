@@ -5,7 +5,7 @@ class App extends Component {
     render() {
         const dom = this.renderDOM();
 
-        const header = new Header();
+        const header = new Header({ title: 'Get Ready to CHAT!' });
         const headerDOM = header.render();
 
         const main = dom.querySelector('main');
