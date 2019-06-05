@@ -14,10 +14,11 @@ class ChatItem extends Component {
     }
 
     renderTemplate() {
+        const chat = this.props.chat;
         return /*html*/`
             <li class="movie-item">
                 <span>
-                    <p></p>
+                    <p>${chat.title}</p>
                     <button>ⓧ</button>
                 </span>
             </li>

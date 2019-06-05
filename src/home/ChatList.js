@@ -1,5 +1,5 @@
 import Component from '../Component.js';
-// import ChatItem from '../home/ChatItem.js';
+import ChatItem from '../home/ChatItem.js';
 
 class ChatList extends Component {
     render() {
@@ -10,6 +10,13 @@ class ChatList extends Component {
         //     const chatItem = new ChatItem({ chat, onRemove });
         //     dom.appendChild(chatItem.render());
         // });
+        const chats = this.props.chats;
+
+        chats.forEach(chat => {
+            const chatItem = new ChatItem({ chat });
+            dom.appendChild(chatItem.render());
+        });
+
 
         return dom;
     }
