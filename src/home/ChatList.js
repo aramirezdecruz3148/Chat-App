@@ -4,12 +4,6 @@ import ChatItem from '../home/ChatItem.js';
 class ChatList extends Component {
     render() {
         const dom = this.renderDOM();
-        // const onRemove = this.props.onRemove;
-
-        // ?.forEach(chat => {
-        //     const chatItem = new ChatItem({ chat, onRemove });
-        //     dom.appendChild(chatItem.render());
-        // });
         const chats = this.props.chats;
 
         chats.forEach(chat => {

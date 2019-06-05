@@ -19,7 +19,8 @@ class ChatItem extends Component {
             <li class="movie-item">
                 <span>
                     <p>${chat.title}</p>
-                    <button>ⓧ</button>
+                    <button id="chat-link"><a href="./chat.html?key=${chat.key}">Go to CHATROOM!</a></button>
+                    <button id="remove-button">ⓧ</button>
                 </span>
             </li>
         `;
