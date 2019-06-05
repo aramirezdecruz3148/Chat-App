@@ -1,25 +1,27 @@
 import Component from '../Component.js';
+import { userChatRef } from '../services/firebase.js';
 
 class ChatItem extends Component {
     render() {
         const dom = this.renderDOM();
-        const onRemove = this.props.onRemove;
         const removeButton = dom.querySelector('button');
+        const chatRoom = this.props.chatRoom;
+        const userChatRefs = userChatRef.child(chatRoom.key);
 
         removeButton.addEventListener('click', () => {
-            onRemove();
+            userChatRefs.remove();
         });
 
         return dom;
     }
 
     renderTemplate() {
-        const chat = this.props.chat;
+        const chatRoom = this.props.chatRoom;
         return /*html*/`
             <li class="movie-item">
                 <span>
-                    <p>${chat.title}</p>
-                    <button id="chat-link"><a href="./chat.html?key=${chat.key}">Go to CHATROOM!</a></button>
+                    <p>${chatRoom.title}</p>
+                    <button id="chat-link"><a href="./chat.html?key=${chatRoom.key}">Go to CHATROOM!</a></button>
                     <button id="remove-button">ⓧ</button>
                 </span>
             </li>

@@ -21,12 +21,12 @@ class App extends Component {
         userChatRef
             .on('value', snapshot => {
                 const value = snapshot.val();
-                const chats = value ? Object.values(value) : [];
-                chatList.update({ chats });
+                const chatRooms = value ? Object.values(value) : [];
+                chatList.update({ chatRooms });
             });
 
 
-        const chatList = new ChatList({ chats: [] });
+        const chatList = new ChatList({ chatRooms: [] });
         main.appendChild(chatList.render());
 
         return dom;

@@ -4,10 +4,10 @@ import ChatItem from '../home/ChatItem.js';
 class ChatList extends Component {
     render() {
         const dom = this.renderDOM();
-        const chats = this.props.chats;
+        const chatRooms = this.props.chatRooms;
 
-        chats.forEach(chat => {
-            const chatItem = new ChatItem({ chat });
+        chatRooms.forEach(chatRoom => {
+            const chatItem = new ChatItem({ chatRoom: chatRoom });
             dom.appendChild(chatItem.render());
         });
 

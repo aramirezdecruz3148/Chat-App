@@ -10,12 +10,15 @@ class AddChat extends Component {
 
             const userChatRefs = userChatRef.push();
 
-            const formInput = form.querySelector('input[name=chat]');
+            const formData = new FormData(form);
+            const newChatRoom = {
+                name: formData.get('chat')
+            };
 
             const room = {
                 key: userChatRefs.key,
                 owner: auth.currentUser.uid,
-                title: formInput.value
+                title: newChatRoom.name
             };
 
             userChatRefs.set(room).then(() => {
