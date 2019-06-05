@@ -2,7 +2,6 @@ import Component from '../Component.js';
 import Header from '../shared/Header.js';
 import AddChat from './AddChat.js';
 import ChatList from './ChatList.js';
-import chats from '../../mockData.js';
 
 class App extends Component {
     render() {
@@ -14,21 +13,10 @@ class App extends Component {
         const main = dom.querySelector('main');
         dom.insertBefore(headerDOM, main);
 
-        const addChat = new AddChat({
-            onAdd: (newChat) => {
-                chats.push(newChat);
-                chatList.update({ chats });
-            }
-        });
+        const addChat = new AddChat();
         main.appendChild(addChat.render());
 
-        const chatList = new ChatList({ chats,
-            onRemove: (chatToRemove) => {
-                const index = chats.indexOf(chatToRemove);
-                chats.splice(index, 1);
-                chatList.update({ chats });
-            }
-        });
+        const chatList = new ChatList({});
         main.appendChild(chatList.render());
 
         return dom;

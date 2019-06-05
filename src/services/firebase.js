@@ -12,4 +12,4 @@ export const app = firebase.initializeApp(config);
 
 export const auth = firebase.auth();
 export const db = firebase.database();
-export const userChatRef = db.ref('chatrooms');
+export const userChatRef = db.ref('chatRooms');

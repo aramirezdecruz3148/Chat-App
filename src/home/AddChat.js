@@ -1,22 +1,27 @@
 import Component from '../Component.js';
+import { auth, userChatRef } from '../services/firebase.js';
 
 class AddChat extends Component {
     render() {
         const form = this.renderDOM();
-        const onAdd = this.props.onAdd;
 
         form.addEventListener('submit', event => {
             event.preventDefault();
 
-            const formData = new FormData(form);
+            const userChatRefs = userChatRef.push();
 
-            const newChat = {
-                title: formData.get('chat')
+            const formInput = form.querySelector('input[name=chat]');
+
+            const room = {
+                key: userChatRefs.key,
+                owner: auth.currentUser.uid,
+                title: formInput.value
             };
 
-            onAdd(newChat);
+            userChatRefs.set(room).then(() => {
+                form.reset();
+            });
 
-            form.reset();
         });
 
         return form;
