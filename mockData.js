@@ -1,15 +1,15 @@
 const chats = [
     {
-        chat: 'Puppies Chat Room'
+        title: 'Puppies Chat Room'
     },
     {
-        chat: 'Kitties Chat Room'
+        title: 'Kitties Chat Room'
     },
     {
-        chat: 'Harry Potter Chat Room'
+        title: 'Harry Potter Chat Room'
     },
     {
-        chat: 'Embriodery Chat Room'
+        title: 'Embriodery Chat Room'
     }
 ];
 

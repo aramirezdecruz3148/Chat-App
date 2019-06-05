@@ -2,6 +2,7 @@ import Component from '../Component.js';
 import Header from '../shared/Header.js';
 import AddChat from './AddChat.js';
 import ChatList from './ChatList.js';
+import chats from '../../mockData.js';
 
 class App extends Component {
     render() {
@@ -16,7 +17,7 @@ class App extends Component {
         const addChat = new AddChat();
         main.appendChild(addChat.render());
 
-        const chatList = new ChatList();
+        const chatList = new ChatList({ chats });
         main.appendChild(chatList.render());
 
         return dom;
