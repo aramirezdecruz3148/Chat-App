@@ -4,7 +4,7 @@ import { userChatRef } from '../services/firebase.js';
 class ChatItem extends Component {
     render() {
         const dom = this.renderDOM();
-        const removeButton = dom.querySelector('button');
+        const removeButton = dom.querySelector('#remove-button');
         const chatRoom = this.props.chatRoom;
         const userChatRefs = userChatRef.child(chatRoom.key);
 
