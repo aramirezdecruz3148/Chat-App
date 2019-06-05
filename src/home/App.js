@@ -14,7 +14,12 @@ class App extends Component {
         const main = dom.querySelector('main');
         dom.insertBefore(headerDOM, main);
 
-        const addChat = new AddChat();
+        const addChat = new AddChat({
+            onAdd: (newChat) => {
+                chats.push(newChat);
+                chatList.update({ chats });
+            }
+        });
         main.appendChild(addChat.render());
 
         const chatList = new ChatList({ chats,
