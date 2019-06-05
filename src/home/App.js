@@ -1,5 +1,6 @@
 import Component from '../Component.js';
 import Header from '../shared/Header.js';
+import AddChat from './AddChat.js';
 
 class App extends Component {
     render() {
@@ -10,6 +11,9 @@ class App extends Component {
 
         const main = dom.querySelector('main');
         dom.insertBefore(headerDOM, main);
+
+        const addChat = new AddChat();
+        main.appendChild(addChat.render());
 
         return dom;
     }
