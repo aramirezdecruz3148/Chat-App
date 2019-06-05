@@ -18,11 +18,11 @@ class ChatItem extends Component {
     renderTemplate() {
         const chatRoom = this.props.chatRoom;
         return /*html*/`
-            <li class="movie-item">
+            <li class="chat-item">
                 <span>
                     <p>${chatRoom.title}</p>
                     <button id="chat-link"><a href="./chat.html?key=${chatRoom.key}">Go to CHATROOM!</a></button>
-                    <button id="remove-button">ⓧ</button>
+                    <button id="remove-button">X</button>
                 </span>
             </li>
         `;
