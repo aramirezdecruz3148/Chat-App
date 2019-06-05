@@ -17,7 +17,7 @@ class App extends Component {
         const addChat = new AddChat();
         main.appendChild(addChat.render());
 
-        const chatList = new ChatList({ chats });
+        const chatList = new ChatList({ chats: chats });
         main.appendChild(chatList.render());
 
         return dom;

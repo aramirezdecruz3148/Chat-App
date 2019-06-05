@@ -2,11 +2,11 @@ import Component from '../Component.js';
 
 class ChatItem extends Component {
     renderTemplate() {
-        const chats = this.props.chats;
+        const chat = this.props.chat;
         return /*html*/`
             <li class="movie-item">
                 <span>
-                    <p>${chats.title}</p>
+                    <p>${chat.title}</p>
                     <button>ⓧ</button>
                 </span>
             </li>
