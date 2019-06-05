@@ -17,7 +17,13 @@ class App extends Component {
         const addChat = new AddChat();
         main.appendChild(addChat.render());
 
-        const chatList = new ChatList({ chats: chats });
+        const chatList = new ChatList({ chats,
+            onRemove: (chatToRemove) => {
+                const index = chats.indexOf(chatToRemove);
+                chats.splice(index, 1);
+                chatList.update({ chats });
+            }
+        });
         main.appendChild(chatList.render());
 
         return dom;
