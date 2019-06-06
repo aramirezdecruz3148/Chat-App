@@ -10,7 +10,6 @@
     align-items: center;
 }
 
-
 a {
     text-decoration: none;
     color: black;
@@ -22,20 +21,26 @@ a {
     font-size: .5em;
     background: #73B46E;
     margin-bottom: 10px;
+    border: 1px solid rgb(82, 82, 82);
 }
 
 #chat-link:hover {
     background-color: rgb(210, 208, 64);
 }
 
+section {
+    display: flex;
+    justify-content: center;
+}
+
 #remove-button {
     height: 25px;
     width: 25px;
-    border-radius: 100%;
     border: 1px solid rgb(82, 82, 82);
     font-size: .8em;
     background: red;
     font-weight: bolder;
+    margin-left: 5px;
 }
 
 #remove-button:hover {

@@ -21,8 +21,10 @@ class ChatItem extends Component {
             <li class="chat-item">
                 <span>
                     <p>${chatRoom.title}</p>
-                    <button id="chat-link"><a href="./chat.html?key=${chatRoom.key}">Go to CHATROOM!</a></button>
-                    <button id="remove-button">X</button>
+                    <section>
+                        <button id="chat-link"><a href="./chat.html?key=${chatRoom.key}">Go to CHATROOM!</a></button>
+                        <button id="remove-button">X</button>
+                    </section
                 </span>
             </li>
         `;
