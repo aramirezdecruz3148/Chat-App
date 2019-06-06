@@ -24,7 +24,7 @@ class ChatItem extends Component {
                     <section>
                         <button id="chat-link"><a href="./chat.html?key=${chatRoom.key}">Go to CHATROOM!</a></button>
                         <button id="remove-button">X</button>
-                    </section
+                    </section>
                 </span>
             </li>
         `;

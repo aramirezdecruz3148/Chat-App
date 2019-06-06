@@ -15,8 +15,10 @@ test('test to render correct ChatItem', assert => {
             <li class="chat-item">
                 <span>
                     <p>Test</p>
-                    <button id="chat-link"><a href="./chat.html?key=-LgdLcaRP5flhWzig5d8">Go to CHATROOM!</a></button>
-                    <button id="remove-button">X</button>
+                    <section>
+                        <button id="chat-link"><a href="./chat.html?key=-LgdLcaRP5flhWzig5d8">Go to CHATROOM!</a></button>
+                        <button id="remove-button">X</button>
+                    </section>
                 </span>
             </li>
         `;
