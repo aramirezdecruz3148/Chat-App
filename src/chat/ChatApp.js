@@ -1,6 +1,7 @@
 import Component from '../Component.js';
 import Header from '../shared/Header.js';
 import HomeButton from './HomeButton.js';
+import MakeMessage from './MakeMessage.js';
 
 class ChatApp extends Component {
     render() {
@@ -11,6 +12,9 @@ class ChatApp extends Component {
 
         const homeButton = new HomeButton();
         main.appendChild(homeButton.render());
+
+        const makeMessage = new MakeMessage();
+        main.appendChild(makeMessage.render());
 
         return dom;
     }
