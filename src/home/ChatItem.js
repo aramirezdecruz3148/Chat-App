@@ -8,9 +8,16 @@ class ChatItem extends Component {
         const chatRoom = this.props.chatRoom;
         const userChatRefs = userChatRef.child(chatRoom.key);
 
+        function addDeleteMessage() {
+            const element = dom.querySelector('#remove-button');
+            element.classList.add('message');
+        }
+
         removeButton.addEventListener('click', () => {
             if(auth.currentUser.uid === chatRoom.owner) {
                 userChatRefs.remove();
+            } else {
+                addDeleteMessage();
             }
         });
 
