@@ -2,6 +2,8 @@ import Component from '../Component.js';
 import Header from '../shared/Header.js';
 import HomeButton from './HomeButton.js';
 import MakeMessage from './MakeMessage.js';
+import QUERY from '../QUERY.js';
+import { userChatRef } from '../services/firebase.js';
 
 class ChatApp extends Component {
     render() {
@@ -13,7 +15,10 @@ class ChatApp extends Component {
         const homeButton = new HomeButton();
         main.appendChild(homeButton.render());
 
-        const makeMessage = new MakeMessage();
+        const searchParams = QUERY.parse(window.location.search.slice(1));
+        const userChatRefs = userChatRef.child(searchParams.key);
+
+        const makeMessage = new MakeMessage({ userChatRefs });
         main.appendChild(makeMessage.render());
 
         return dom;
