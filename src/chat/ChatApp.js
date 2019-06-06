@@ -1,5 +1,6 @@
 import Component from '../Component.js';
 import Header from '../shared/Header.js';
+import HomeButton from './HomeButton.js';
 
 class ChatApp extends Component {
     render() {
@@ -7,6 +8,9 @@ class ChatApp extends Component {
         const main = dom.querySelector('main');
         const header = new Header({ title: 'chat Chat CHAT AWAY!' });
         dom.insertBefore(header.render(), main);
+
+        const homeButton = new HomeButton();
+        main.appendChild(homeButton.render());
 
         return dom;
     }
