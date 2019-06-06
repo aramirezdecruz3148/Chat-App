@@ -1,5 +1,4 @@
 import ChatItem from '../src/home/ChatItem.js';
-// import { userChatRef } from '../src/services/firebase.js';
 
 const test = QUnit.test;
 
