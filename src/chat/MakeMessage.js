@@ -16,9 +16,16 @@ class MakeMessage extends Component {
 
             const messages = messagesRef.push();
 
+            const date = new Date();
+
+            const avatar = auth.currentUser.photoURL || './assets/avatar-default.png';
+
             messages.set({
                 owner: auth.currentUser.uid,
-                message: input.value
+                message: input.value,
+                displayName: auth.currentUser.displayName,
+                photoURL: avatar,
+                date: date
             });
 
             form.reset();
