@@ -4,6 +4,7 @@ import HomeButton from './HomeButton.js';
 import MakeMessage from './MakeMessage.js';
 import QUERY from '../QUERY.js';
 import { userChatRef } from '../services/firebase.js';
+import MessageList from './MessageList.js';
 
 class ChatApp extends Component {
     render() {
@@ -20,6 +21,9 @@ class ChatApp extends Component {
 
         const makeMessage = new MakeMessage({ userChatRefs });
         main.appendChild(makeMessage.render());
+
+        const messageList = new MessageList();
+        main.appendChild(messageList.render());
 
         return dom;
     }
