@@ -23,7 +23,7 @@ class ChatApp extends Component {
         main.appendChild(makeMessage.render());
 
         const messageList = new MessageList();
-        main.appendChild(messageList.render());
+        main.appendChild(messageList.render());     
 
         return dom;
     }
