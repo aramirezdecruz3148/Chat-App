@@ -16,8 +16,6 @@ class MakeMessage extends Component {
 
             const messages = messagesRef.push();
 
-            const date = new Date();
-
             const avatar = auth.currentUser.photoURL || './assets/avatar-default.png';
 
             messages.set({
@@ -25,7 +23,7 @@ class MakeMessage extends Component {
                 message: input.value,
                 displayName: auth.currentUser.displayName,
                 photoURL: avatar,
-                date: date
+                date: Date()
             });
 
             form.reset();
