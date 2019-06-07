@@ -12,12 +12,11 @@
 }
  
 .message-list::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.426);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.57);
 }
  
 .message-list::-webkit-scrollbar-thumb {
   background-color: rgb(182, 220, 85);
   border: 1.5px solid rgb(165, 165, 165);
-  outline: 1px solid slategrey;
 }
