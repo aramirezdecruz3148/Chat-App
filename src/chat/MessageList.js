@@ -13,6 +13,10 @@ class MessageList extends Component {
             const messageItem = new MessageItem ({ message });
             dom.appendChild(messageItem.render());
         });
+        
+        setTimeout(() => {
+            dom.scrollTop = dom.scrollHeight;
+        });
 
         return dom;
     }
