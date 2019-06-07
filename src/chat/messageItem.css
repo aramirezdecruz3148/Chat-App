@@ -19,14 +19,15 @@
 .message-item {
     list-style: none;
     border: solid 2px #73B46E;
-    width: 700px;
-    height: 75px;
+    width: 800px;
+    height: auto;
     margin-bottom: 5px;
+    margin-left: -15px;
 }
 
 #message {
     margin-left: 15px;
     font-weight: bolder;
     color: rgb(55, 55, 55);
-    font-size: 1.2em;
+    font-size: 1em;
 }
