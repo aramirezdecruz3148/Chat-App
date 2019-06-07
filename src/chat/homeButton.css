@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
 #home-button {
     height: 25px;
     width: 150px;
@@ -7,6 +9,7 @@
     margin-top: -40px;
     border: 1px solid rgb(82, 82, 82);
     border: 1px solid rgb(167, 167, 167);
+    font-family: 'Cabin', sans-serif;
 }
 
 #home-button:hover {

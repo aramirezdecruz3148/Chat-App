@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
 .message-item img {
     width: 30px;
     border-radius: 100%;
@@ -6,9 +8,10 @@
 }
 
 .message-item p {
-    font-size: .8em;
-    margin-left: -630px;
+    font-size: .6em;
+    margin-left: -645px;
     margin-top: -15px;
+    font-family: 'Cabin', sans-serif;
 }
 
 .span-content {
@@ -29,4 +32,5 @@
     font-weight: bolder;
     color: rgb(55, 55, 55);
     font-size: 1em;
+    font-family: 'Cabin', sans-serif;
 }

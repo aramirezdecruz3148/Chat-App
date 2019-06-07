@@ -10,8 +10,6 @@ class ChatList extends Component {
             const chatItem = new ChatItem({ chatRoom: chatRoom });
             dom.appendChild(chatItem.render());
         });
-
-        dom.scrollTop = dom.scrollHeight;
         
         return dom;
     }
