@@ -13,6 +13,7 @@ class MessageList extends Component {
             const messageItem = new MessageItem ({ message });
             dom.appendChild(messageItem.render());
         });
+
         return dom;
     }
 

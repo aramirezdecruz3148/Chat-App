@@ -1,13 +1,13 @@
 import Component from '../Component.js';
-import { auth } from '../services/firebase.js';
+import { auth, messageRoomRef } from '../services/firebase.js';
 
 class MakeMessage extends Component {
     render() {
         const form = this.renderDOM();
 
-        const userChatRefs = this.props.userChatRefs;
+        const key = this.props.key;
 
-        const messagesRef = userChatRefs.child('messages');
+        const messagesRef = messageRoomRef.child(key);
 
         const input = form.querySelector('input');
 
