@@ -1,0 +1,14 @@
+#home-button {
+    height: 25px;
+    width: 150px;
+    font-size: .8em;
+    background: #73B46E;
+    margin-bottom: 10px;
+    margin-top: -40px;
+    border: 1px solid rgb(82, 82, 82);
+    border: 1px solid rgb(167, 167, 167);
+}
+
+#home-button:hover {
+    background-color: rgb(210, 208, 64);
+}

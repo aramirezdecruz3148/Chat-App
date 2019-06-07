@@ -1,0 +1,54 @@
+.chat-item {
+    border: solid 2px #73B46E;
+    list-style: none;
+    padding: 5px;
+    width: 300px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#chat-link {
+    height: 25px;
+    width: 75px;
+    font-size: .5em;
+    background: #73B46E;
+    margin-bottom: 10px;
+    border: 1px solid rgb(82, 82, 82);
+}
+
+#chat-link:hover {
+    background-color: rgb(210, 208, 64);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+#remove-button {
+    height: 25px;
+    width: 25px;
+    border: 1px solid rgb(82, 82, 82);
+    font-size: .8em;
+    background: red;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+.message:hover:after {
+    content: "You cannot delete a chatroom you didn't create!";
+    background: rgb(210, 210, 210);
+    display: inline-block;
+    width: 300px;
+    height: 20px;
+    font-family: 'Indie Flower', cursive;
+}

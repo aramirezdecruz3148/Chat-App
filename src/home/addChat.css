@@ -1,0 +1,24 @@
+#chat-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#chat-form button {
+    margin-left: 5px;
+    background-color: #73B46E;
+    height: 25px;
+    width: 75px;
+    font-size: .8em;
+}
+
+#chat-form button:hover {
+    background-color: rgb(210, 208, 64);
+}
+
+#chat-form input {
+    margin-left: 5px;
+    height: 20px;
+    width: 175px;
+    border: solid 2px rgb(165, 165, 165);
+}
