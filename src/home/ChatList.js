@@ -11,7 +11,8 @@ class ChatList extends Component {
             dom.appendChild(chatItem.render());
         });
 
-
+        dom.scrollTop = dom.scrollHeight;
+        
         return dom;
     }
 
