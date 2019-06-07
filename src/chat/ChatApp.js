@@ -26,9 +26,9 @@ class ChatApp extends Component {
         const messageList = new MessageList({ messages: [] });
         main.appendChild(messageList.render());  
         
-        userChatRef.on('value', snapshot => {
+        userChatRefs.on('value', snapshot => {
             const value = snapshot.val();
-            const messages = value ? Object.values(value) : [];
+            const messages = value.messages ? Object.values(value.messages) : [];
             messageList.update({ messages });
             header.update({ title: value.title });
         });
