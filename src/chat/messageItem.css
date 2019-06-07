@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+
+.message-item img {
+    width: 30px;
+    border-radius: 100%;
+    margin-right: 5px;
+    border: 2px solid rgb(180, 226, 61);
+}
+
+.message-item p {
+    font-size: .6em;
+    margin-left: -645px;
+    margin-top: -15px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.span-content {
+    display: flex;
+    align-items: center;
+}
+
+.message-item {
+    list-style: none;
+    border: solid 2px #73B46E;
+    width: 850px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+#message {
+    margin-left: 15px;
+    font-weight: bolder;
+    color: rgb(55, 55, 55);
+    font-size: 1em;
+    font-family: 'Cabin', sans-serif;
+}

@@ -10,8 +10,7 @@ class ChatList extends Component {
             const chatItem = new ChatItem({ chatRoom: chatRoom });
             dom.appendChild(chatItem.render());
         });
-
-
+        
         return dom;
     }
 
